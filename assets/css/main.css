@@ -734,7 +734,7 @@ input:focus:-ms-input-placeholder {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 0;
+  padding: 70px 0;
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
@@ -824,8 +824,8 @@ html.nav_opened .c-sidebar {
   opacity: 1;
   pointer-events: auto; }
   html.nav_opened .c-sidebar_content {
-    -webkit-transform: translate3d(360px, 0px, 0px);
-            transform: translate3d(360px, 0px, 0px); }
+    -webkit-transform: translate3d(365px, 0px, 0px);
+            transform: translate3d(365px, 0px, 0px); }
 
 .c-sidebar {
   position: fixed;
@@ -868,7 +868,7 @@ html.nav_opened .c-sidebar {
       border-radius: 20px;
       margin-left: 10px; }
   .c-sidebar_content {
-    width: 360px;
+    width: 365px;
     padding: 40px 0 50px 20px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -878,7 +878,7 @@ html.nav_opened .c-sidebar {
         -ms-flex-flow: column;
             flex-flow: column;
     position: absolute;
-    left: -360px;
+    left: -365px;
     -webkit-transform: translateX(-330px);
             transform: translateX(-330px);
     -webkit-justify-content: space-between;
@@ -905,7 +905,6 @@ html.nav_opened .c-sidebar {
       height: 80px;
       border-radius: 50%;
       background-color: #FFF;
-      background-image: url(../img/alert-icon-thanks.png);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat; }
@@ -1115,7 +1114,7 @@ html.nav_opened .c-sidebar {
   width: 100%;
   border-radius: 5px;
   text-align: center;
-  height: 235px;
+  height: 260px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1131,8 +1130,8 @@ html.nav_opened .c-sidebar {
           align-items: center;
   position: relative; }
   .c-alert_box__icon {
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     position: absolute;
     left: 50%;
     top: 0;
@@ -1141,22 +1140,22 @@ html.nav_opened .c-sidebar {
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 4px solid #fff;
-    margin-left: -22.5px;
-    margin-top: -22.5px; }
+    margin-left: -32.5px;
+    margin-top: -32.5px; }
   .c-alert_box__title {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px; }
   .c-alert_box__text {
-    font-size: 12px;
+    font-size: 16px;
     padding: 0 25px; }
   .c-alert_box__button {
     color: #fff;
     border: none;
-    height: 35px;
+    height: 45px;
     transition: all 0.15s ease-out 0s;
-    width: 120px;
+    width: 145px;
     text-transform: uppercase;
-    font-size: 16px; }
+    font-size: 18px; }
 
 /* THANKS ALERT BOX STYLES */
 .c-thanks_icon {
@@ -1180,3 +1179,13 @@ html.nav_opened .c-sidebar {
   background: #ff4444; }
   .c-error_button:focus, .c-error_button:active, .c-error_button:hover {
     background: #ff2b2b; }
+
+/* SUCCESS ALERT BOX STYLES */
+.c-success_icon {
+  background-image: url(../img/alert-icon-success.png); }
+
+.c-success_title {
+  color: #009e0b; }
+
+.c-success_button {
+  background: #009e0b; }

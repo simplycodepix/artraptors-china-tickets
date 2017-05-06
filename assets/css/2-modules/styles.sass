@@ -37,7 +37,7 @@ html.nav_opened
 		opacity: 1
 		pointer-events: auto
 		&_content
-	  transform: translate3d(360px, 0px, 0px)
+	  transform: translate3d(365px, 0px, 0px)
 
 
 .c-sidebar
@@ -84,13 +84,13 @@ html.nav_opened
 			margin-left: 10px
 
 	&_content
-		width: 360px
+		width: 365px
 		padding: 40px 0 50px 20px
 		display: flex
 		position: relative
 		flex-flow: column
 		position: absolute
-		left: -360px
+		left: -365px
 		transform: translateX(-330px)
 		justify-content: space-between
 		+transition(all 300ms ease-in-out)
@@ -114,7 +114,6 @@ html.nav_opened
 			border-radius: 50%
 			background-color: #FFF
 			background:
-				image: url(../img/alert-icon-thanks.png)
 				size: contain
 				position: center
 				repeat: no-repeat
@@ -345,7 +344,7 @@ html.nav_opened
 		width: 100%
 		border-radius: $border_radius
 		text-align: center
-		height: 235px
+		height: 260px
 		display: flex
 		flex-flow: column
 		justify-content: space-between
@@ -353,8 +352,8 @@ html.nav_opened
 		align-items: center
 		position: relative
 		&__icon
-			width: 55px
-			height: 55px
+			width: 65px
+			height: 65px
 			position: absolute
 			left: 50%
 			top: 0
@@ -364,25 +363,25 @@ html.nav_opened
 				repeat: no-repeat
 			border-radius: 50%
 			border: 4px solid $white
-			margin-left: -22.5px
-			margin-top: -22.5px
+			margin-left: -32.5px
+			margin-top: -32.5px
 
 		&__title
-			font-size: 20px
+			font-size: 24px
 			margin-bottom: 20px
 
 		&__text
-			font-size: 12px
+			font-size: 16px
 			padding: 0 25px
 
 		&__button
 			color: $white
 			border: none
-			height: 35px
+			height: 45px
 			+transition
-			width: 120px
+			width: 145px
 			text-transform: uppercase
-			font-size: 16px
+			font-size: 18px
 
 /* THANKS ALERT BOX STYLES */
 .c-thanks
@@ -405,4 +404,12 @@ html.nav_opened
 		&:focus, &:active, &:hover
 			background: darken($error_clr, 5%)
 
+/* SUCCESS ALERT BOX STYLES */
+.c-success
+	&_icon
+		background-image: url(../img/alert-icon-success.png)
+	&_title
+		color: $success_clr
+	&_button
+		background: $success_clr
 		
