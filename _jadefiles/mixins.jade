@@ -1,0 +1,31 @@
+mixin sidebar_list__item(icon, link_title)
+	li.c-sidebar_list__item: a(href="#")
+		i(class=icon aria-hidden="true")
+		span=link_title
+
+mixin head_logged__in
+	.c-sidebar_head__thumb
+	.c-sidebar_head__content
+		span.c-sidebar_name Евгений
+		span.c-sidebar_surname Голдманиулио
+
+mixin head_log__in
+	.c-sidebar_head__thumb
+	.c-sidebar_head__content
+		span.c-sidebar_login Войти в аккаунт
+
+
+// *******************
+// Sidebar list item (link)
+// *******************
++sidebar_list__item
+
+// *******************
+// Sidebar user logged in
+// *******************
++head_logged__in
+
+// *******************
+// Sidebar user need to login
+// *******************
++head_log__in
