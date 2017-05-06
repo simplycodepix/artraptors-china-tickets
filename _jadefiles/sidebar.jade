@@ -14,18 +14,26 @@ mixin head_log__in
 	.c-sidebar_head__content
 		span.c-sidebar_login Войти в аккаунт
 
+
+// sidebar start
 .c-sidebar.c-sidebar_overlay
+	// sidebar content start
 	.c-sidebar_content
 		
+		// sidebar toggle
 		.sidebar-toogle
 			i.fa.fa-times
 
+		// sidebar head start
 		a(href="").c-sidebar_head
 
 			+head_logged__in
 
+		// sidebar head end
+		// sidebar menu start
 		.c-sidebar_menu
 
+			// sidebar menu list start
 			ul.c-sidebar_list
 				+sidebar_list__item('fa fa-user', 'Мой профиль')
 				+sidebar_list__item('fa fa-shopping-basket', 'Мои заказы')
@@ -36,9 +44,13 @@ mixin head_log__in
 				+sidebar_list__item('fa fa-search', 'Поиск авиабилетов')
 				+sidebar_list__item('fa fa-info-circle', 'Дополнительная информация')
 				+sidebar_list__item('fa fa-suitcase', 'Связаться с нами')
+			// sidebar menu list end
+		// sidebar menu end
 
+		// sidebar bottom start
 		.c-sidebar_bottom
 			
+			// sidebar bottom share start
 			.c-sidebar_bottom__share
 
 				ul.c-sidebar_list
@@ -48,3 +60,5 @@ mixin head_log__in
 				ul.c-sidebar_list
 					+sidebar_list__item('fa fa-sliders', 'Настройки')
 					+sidebar_list__item('fa fa-power-off', 'Выйти')
+			// sidebar bottom share end
+// sidebar end

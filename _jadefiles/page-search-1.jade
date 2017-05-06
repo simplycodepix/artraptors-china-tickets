@@ -3,7 +3,7 @@ mixin suitcase(num)
 		i.fa.fa-suitcase
 		span.c-baggage_num=num
 
-
+// search section start
 section.c-search
 	.c-container
 
@@ -11,14 +11,20 @@ section.c-search
 		
 		.c-search_form
 			form
+				// fields(cities) start
 				.c-search_form__fields
 					
+					// field(city) start
 					.c-search_form__field
 						input(type="text" placeholder="Киев")
+					// field(city) end
 					
+					// field(city) start
 					.c-search_form__field
 						input(type="text" placeholder="Гуанджоу")
+					// field(city) end
 					
+					// switch city button
 					button(type="button").c-search_form__switch
 				
 				.c-search_form__buttons
@@ -31,6 +37,7 @@ section.c-search
 				// additional options start
 				.c-search_form__additional
 					
+					// selects start
 					.c-search_form__selects
 						
 						.c-search_form__select
@@ -40,23 +47,31 @@ section.c-search
 						.c-search_form__select
 							label: i.fa.fa-trophy
 							button(type="button")#c-n--of-c Эконом
+					// selects end
 					
+					// baggage start
 					.c-search_form__baggage
 						+suitcase('1')
 						+suitcase('2')
 						+suitcase('3')
-					
+					// baggage end
+
 					.c-search_form__flights
 					
+						// flight start
 						.c-search_form__flight
 							input(type="checkbox" name="flight" id="flight_d")
 							label.c-search_form__checkbox(for="flight_d")
 							label(for="flight_d") Только прямой рейс
+						// flight end
 						
+						// flight start
 						.c-search_form__flight
 							input(type="checkbox" name="flight" id="flight_v")
 							label.c-search_form__checkbox(for="flight_v")
 							label(for="flight_v") Визовый выезд
+						// flight end
+					// flights end
 					
 					.c-search_form__comment
 						input(type="text" placeholder="Комментарий")
@@ -64,5 +79,6 @@ section.c-search
 						
 				// additional options end
 				
-				//input(type="submit" value="Поиск").c-search_form__submit.c-btn
-				a(href="component-thanks.html").c-search_form__submit.c-btn Поиск
+				input(type="submit" value="Поиск").c-search_form__submit.c-btn
+
+// search section end
