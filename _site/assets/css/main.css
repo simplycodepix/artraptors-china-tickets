@@ -746,7 +746,7 @@ input:focus:-ms-input-placeholder {
   text-align: center;
   margin: 0 0 45px; }
   .c-tickets_logo img {
-    max-width: 125px;
+    max-width: 130px;
     height: auto; }
 
 .c-btn {
@@ -1070,9 +1070,11 @@ html.nav_opened .c-sidebar {
     border-radius: 5px;
     padding-left: 15px;
     font-size: 16px; }
-  .c-search_form__fields {
+  .c-search_form__cities {
     position: relative; }
-  .c-search_form__field input {
+  .c-search_form__city:last-child input {
+    margin-bottom: 0; }
+  .c-search_form__city input {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     display: block;
@@ -1085,10 +1087,28 @@ html.nav_opened .c-sidebar {
     border-radius: 5px;
     outline: none;
     transition: all 0.15s ease-out 0s; }
-    .c-search_form__field input:focus {
+    .c-search_form__city input:focus {
       border: 2px solid #fff; }
-  .c-search_form__field:last-child input {
-    margin-bottom: 0; }
+  .c-search_form__range {
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    max-height: 345px;
+    overflow-y: scroll;
+    padding: 10px 20px;
+    text-align: left; }
+    .c-search_form__range .c-range_list {
+      list-style-type: none; }
+      .c-search_form__range .c-range_list__item {
+        margin-bottom: 5px; }
+      .c-search_form__range .c-range_list__city {
+        font-size: 21px;
+        color: #d4d4d4; }
+      .c-search_form__range .c-range_list__airports {
+        font-size: 13px;
+        color: #d4d4d4; }
+      .c-search_form__range .c-range_list span {
+        display: block; }
   .c-search_form__buttons {
     display: -webkit-flex;
     display: -ms-flexbox;

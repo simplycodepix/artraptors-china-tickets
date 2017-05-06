@@ -1,0 +1,28 @@
+mixin range_list__item(city, airport)
+	li.c-range_list__item
+		.c-range_list__city
+			span=city
+		.c-range_list__airports
+			span=airport
+
+section.c-search
+	.c-container
+
+		.c-tickets_logo: img(src="assets/img/logo.png", alt="China tickets logo")
+		
+		.c-search_form
+			form
+				// fields(cities) start
+				.c-search_form__cities
+					
+					// field(city) start
+					.c-search_form__city
+						input(type="text" placeholder="Киев")
+						.c-search_form__range
+							ul.c-range_list
+								+range_list__item('Киев Украина', 'Все аэропорты')
+								+range_list__item('Киш Айленд Иран', 'Киш Айленд')
+								+range_list__item('Key West', 'International')
+								+range_list__item('Рам-Ки Багамы', 'Рам-Ки')
+								+range_list__item('Киев Украина', 'Все аэропорты')
+					// field(city) end
