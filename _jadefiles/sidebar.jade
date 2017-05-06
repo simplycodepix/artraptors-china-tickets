@@ -1,0 +1,50 @@
+mixin sidebar_list__item(icon, link_title)
+	li.c-sidebar_list__item: a(href="#")
+		i(class=icon aria-hidden="true")
+		span=link_title
+
+mixin head_logged__in
+	.c-sidebar_head__thumb
+	.c-sidebar_head__content
+		span.c-sidebar_name Евгений
+		span.c-sidebar_surname Голдманиулио
+
+mixin head_log__in
+	.c-sidebar_head__thumb
+	.c-sidebar_head__content
+		span.c-sidebar_login Войти в аккаунт
+
+.c-sidebar.c-sidebar_overlay
+	.c-sidebar_content
+		
+		.sidebar-toogle
+			i.fa.fa-times
+
+		a(href="").c-sidebar_head
+
+			+head_logged__in
+
+		.c-sidebar_menu
+
+			ul.c-sidebar_list
+				+sidebar_list__item('fa fa-user', 'Мой профиль')
+				+sidebar_list__item('fa fa-shopping-basket', 'Мои заказы')
+				li.c-sidebar_list__item: a(href="#")
+					i.fa.fa-suitcase
+					span Уведомления
+					span.num 24
+				+sidebar_list__item('fa fa-search', 'Поиск авиабилетов')
+				+sidebar_list__item('fa fa-info-circle', 'Дополнительная информация')
+				+sidebar_list__item('fa fa-suitcase', 'Связаться с нами')
+
+		.c-sidebar_bottom
+			
+			.c-sidebar_bottom__share
+
+				ul.c-sidebar_list
+					+sidebar_list__item('fa fa-pencil', 'Оставить отзыв')
+					+sidebar_list__item('fa fa-share-alt', 'Поделиться с друзьями')
+			
+				ul.c-sidebar_list
+					+sidebar_list__item('fa fa-sliders', 'Настройки')
+					+sidebar_list__item('fa fa-power-off', 'Выйти')

@@ -1,0 +1,68 @@
+mixin suitcase(num)
+	button.c-btn(type="button")
+		i.fa.fa-suitcase
+		span.c-baggage_num=num
+
+
+section.c-search
+	.c-container
+
+		.c-tickets_logo: img(src="assets/img/logo.png", alt="China tickets logo")
+		
+		.c-search_form
+			form
+				.c-search_form__fields
+					
+					.c-search_form__field
+						input(type="text" placeholder="Киев")
+					
+					.c-search_form__field
+						input(type="text" placeholder="Гуанджоу")
+					
+					button(type="button").c-search_form__switch
+				
+				.c-search_form__buttons
+					button(type="button").c-search_form__button.c-btn Туда
+					button(type="button").c-search_form__button.c-btn Обратно
+				
+				// additional options button
+				a(href="#").additional_btn Дополнительные параметры
+				
+				// additional options start
+				.c-search_form__additional
+					
+					.c-search_form__selects
+						
+						.c-search_form__select
+							label: i.fa.fa-male
+							button(type="button")#c-n--of-p 1
+						
+						.c-search_form__select
+							label: i.fa.fa-trophy
+							button(type="button")#c-n--of-c Эконом
+					
+					.c-search_form__baggage
+						+suitcase('1')
+						+suitcase('2')
+						+suitcase('3')
+					
+					.c-search_form__flights
+					
+						.c-search_form__flight
+							input(type="checkbox" name="flight" id="flight_d")
+							label.c-search_form__checkbox(for="flight_d")
+							label(for="flight_d") Только прямой рейс
+						
+						.c-search_form__flight
+							input(type="checkbox" name="flight" id="flight_v")
+							label.c-search_form__checkbox(for="flight_v")
+							label(for="flight_v") Визовый выезд
+					
+					.c-search_form__comment
+						input(type="text" placeholder="Комментарий")
+
+						
+				// additional options end
+				
+				//input(type="submit" value="Поиск").c-search_form__submit.c-btn
+				a(href="component-thanks.html").c-search_form__submit.c-btn Поиск
