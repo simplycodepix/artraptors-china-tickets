@@ -119,3 +119,70 @@ input
 			padding: 5px 15px
 			&.active
 				color: $dark
+
+/* COMPONENT CALENDAR STYLES */
+.c-calendar
+	.c-container
+		padding: 0 25px
+		width: 100%
+		max-width: 414px
+	
+	&_flex
+		display: flex
+		flex-flow: wrap 
+		width: 100%
+		list-style-type: none
+		justify-content: space-between
+		font-size: 18px
+		li
+			text-align: center
+			margin-bottom: 8px
+			padding: 0 2px
+			width: 14.2%
+			border-radius: 50%
+			span
+				border-radius: 50%
+				width: 35px
+				height: 35px
+				line-height: 35px
+				display: block
+				color: $white
+			&.active span 
+				background-color: $white
+				color: $calendar_current_clr
+			&.muted span
+				color: transparentize($white, 0.8)
+
+	&_box
+		width: 100%
+		background-color: $calendar_bg
+		padding: 20px 25px 25px
+		border-radius: $border_radius
+
+		&__month
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 18px
+			margin-bottom: 20px
+			padding-bottom: 15px
+			border-bottom: 1px solid $calendar_border
+			text-transform: uppercase
+
+		&__week
+			color: $blue_clr
+		
+		&__days
+			border-bottom: 1px solid $calendar_border
+			padding-bottom: 5px
+			margin-bottom: 20px
+
+		&__bottom
+			text-align: center
+			text-transform: uppercase
+			span 
+				color: $blue_clr
+				font-size: 18px
+
+	&_current
+		margin: 0 50px

@@ -786,6 +786,80 @@ input:focus:-ms-input-placeholder {
       .c-select_box__list li.active {
         color: #000; }
 
+/* COMPONENT CALENDAR STYLES */
+.c-calendar .c-container {
+  padding: 0 25px;
+  width: 100%;
+  max-width: 414px; }
+
+.c-calendar_flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  width: 100%;
+  list-style-type: none;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px; }
+  .c-calendar_flex li {
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0 2px;
+    width: 14.2%;
+    border-radius: 50%; }
+    .c-calendar_flex li span {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      display: block;
+      color: #fff; }
+    .c-calendar_flex li.active span {
+      background-color: #fff;
+      color: #240340; }
+    .c-calendar_flex li.muted span {
+      color: rgba(255, 255, 255, 0.2); }
+
+.c-calendar_box {
+  width: 100%;
+  background-color: rgba(168, 0, 255, 0.2);
+  padding: 20px 25px 25px;
+  border-radius: 5px; }
+  .c-calendar_box__month {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(126, 0, 255, 0.5);
+    text-transform: uppercase; }
+  .c-calendar_box__week {
+    color: #0096ff; }
+  .c-calendar_box__days {
+    border-bottom: 1px solid rgba(126, 0, 255, 0.5);
+    padding-bottom: 5px;
+    margin-bottom: 20px; }
+  .c-calendar_box__bottom {
+    text-align: center;
+    text-transform: uppercase; }
+    .c-calendar_box__bottom span {
+      color: #0096ff;
+      font-size: 18px; }
+
+.c-calendar_current {
+  margin: 0 50px; }
+
 header.c-head {
   height: 55px;
   background: transparent;

@@ -64,6 +64,7 @@
 <div class="c-content_center">
 
 
+<!-- search section start-->
 <section class="c-search">
   <div class="c-container">
     <div class="c-tickets_logo"><img src="assets/img/logo.png" alt="China tickets logo"/></div>
@@ -74,37 +75,70 @@
           <!-- field(city) start-->
           <div class="c-search_form__city">
             <input type="text" placeholder="Киев"/>
-            <div class="c-search_form__range">
-              <ul class="c-range_list">
-                <li class="c-range_list__item">
-                  <div class="c-range_list__city"><span>Киев Украина</span></div>
-                  <div class="c-range_list__airports"><span>Все аэропорты</span></div>
-                </li>
-                <li class="c-range_list__item">
-                  <div class="c-range_list__city"><span>Киш Айленд Иран</span></div>
-                  <div class="c-range_list__airports"><span>Киш Айленд</span></div>
-                </li>
-                <li class="c-range_list__item">
-                  <div class="c-range_list__city"><span>Key West</span></div>
-                  <div class="c-range_list__airports"><span>International</span></div>
-                </li>
-                <li class="c-range_list__item">
-                  <div class="c-range_list__city"><span>Рам-Ки Багамы</span></div>
-                  <div class="c-range_list__airports"><span>Рам-Ки</span></div>
-                </li>
-                <li class="c-range_list__item">
-                  <div class="c-range_list__city"><span>Киев Украина</span></div>
-                  <div class="c-range_list__airports"><span>Все аэропорты</span></div>
-                </li>
-              </ul>
-            </div>
           </div>
           <!-- field(city) end-->
+          <!-- field(city) start-->
+          <div class="c-search_form__city">
+            <input type="text" placeholder="Гуанджоу"/>
+          </div>
+          <!-- field(city) end-->
+          <!-- switch city button-->
+          <button type="button" class="c-search_form__switch"></button>
         </div>
+        <div class="c-search_form__buttons">
+          <button type="button" class="c-search_form__button c-btn">Туда</button>
+          <button type="button" class="c-search_form__button c-btn">Обратно</button>
+        </div>
+        <!-- additional options button--><a href="#" class="additional_btn">Дополнительные параметры</a>
+        <!-- additional options start-->
+        <div class="c-search_form__additional">
+          <!-- selects start-->
+          <div class="c-search_form__selects">
+            <div class="c-search_form__select">
+              <label><i class="fa fa-male"></i></label>
+              <button type="button" id="c-n--of-p">1</button>
+            </div>
+            <div class="c-search_form__select">
+              <label><i class="fa fa-trophy"></i></label>
+              <button type="button" id="c-n--of-c">Эконом</button>
+            </div>
+          </div>
+          <!-- selects end-->
+          <!-- baggage start-->
+          <div class="c-search_form__baggage">
+            <button type="button" class="c-btn"><i class="fa fa-suitcase"></i><span class="c-baggage_num">1</span></button>
+            <button type="button" class="c-btn"><i class="fa fa-suitcase"></i><span class="c-baggage_num">2</span></button>
+            <button type="button" class="c-btn"><i class="fa fa-suitcase"></i><span class="c-baggage_num">3</span></button>
+          </div>
+          <!-- baggage end-->
+          <div class="c-search_form__flights">
+            <!-- flight start-->
+            <div class="c-search_form__flight">
+              <input type="checkbox" name="flight" id="flight_d"/>
+              <label for="flight_d" class="c-search_form__checkbox"></label>
+              <label for="flight_d">Только прямой рейс</label>
+            </div>
+            <!-- flight end-->
+            <!-- flight start-->
+            <div class="c-search_form__flight">
+              <input type="checkbox" name="flight" id="flight_v"/>
+              <label for="flight_v" class="c-search_form__checkbox"></label>
+              <label for="flight_v">Визовый выезд</label>
+            </div>
+            <!-- flight end-->
+          </div>
+          <!-- flights end-->
+          <div class="c-search_form__comment">
+            <input type="text" placeholder="Комментарий"/>
+          </div>
+        </div>
+        <!-- additional options end-->
+        <input type="submit" value="Поиск" class="c-search_form__submit c-btn"/>
       </form>
     </div>
   </div>
 </section>
+<!-- search section end-->
 
 </div>
 
