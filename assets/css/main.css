@@ -827,7 +827,7 @@ input:focus:-ms-input-placeholder {
 .c-calendar_box {
   width: 100%;
   background-color: rgba(168, 0, 255, 0.2);
-  padding: 20px 25px 25px;
+  padding: 20px 25px;
   border-radius: 5px; }
   .c-calendar_box__month {
     display: -webkit-flex;
@@ -856,6 +856,14 @@ input:focus:-ms-input-placeholder {
     .c-calendar_box__bottom span {
       color: #0096ff;
       font-size: 18px; }
+    .c-calendar_box__bottom .c-calendar_box__button {
+      width: 145px;
+      height: 45px;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      background: linear-gradient(to top, #156298, #9000ff);
+      margin-top: 20px; }
 
 .c-calendar_current {
   margin: 0 50px; }
